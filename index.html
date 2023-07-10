@@ -1,162 +1,240 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="css/style.css">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Caprasimo&display=swap" rel="stylesheet">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Caprasimo&display=swap" rel="stylesheet">
-        <title>mi pagina</title>
-    </head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="alternate" href="css/style.css" type="application/atom+xml" title="Atom">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Blog avarus</title>
+</head>
 
 <body>
+    <!--seccion inicio-->
+    <section id="inicio">
+        <div class="contenido">
+            <header>
+                <div class="contenido_header">
+                    <h1>/*avarus*\</h1>
+                    <nav id="nav" class="">
+                        <ul id="links">
+                            <li><a href="#inicio" class="selecionado">INICIO</a></li>
+                            <li><a href="#sobremi">SOBRE MI</a></li>
+                            <li><a href="#servicios">SERVICIOS</a></li>
+                            <li><a href="#portfolio">PORTFOLIO</a></li>
 
+                        </ul>
+                    </nav>
+                    <!--iconos del menu responsive-->
+                    <div id="iconos_nav" onclick="responsiveMenu()">
+                        <i class="fa-solid fa-bars"></i>
+                    </div>
+                    <!--iconos de las redes sociales-->
+                    <div class="redes">
+                        <a id="facebook" onclick="linkFacebook()" href="#"><i class="fa-brands fa-facebook"></i></a>
+                        <a id="instagram" onclick="linkInstagram()" href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a id="whatsapp" onclick="numWhatsapp()" href="#"><i class="fa-brands fa-whatsapp"></i></a>
+                    </div>
+                </div>
+            </header>
+            <div class="presentacion">
+                <p class="bienvenida">Bienvenidos
+                </p>
+                <h2>Soy <span>Jose A. Izaguirre P.</span> Desarrollador web</h2>
+                <p class="descripcion">sé mi invitado y echale un vistazo a mi pagina web...!</p>
+                <a id="porfolio" href="#portfolio">Ir a Portfolio</a>
+            </div>
+        </div>
+    </section>
 
+    <!--seccion sobre mi-->
 
-    <div class="content">
-        <h1 class="heading">¡Este soy yo!</h1>
-        <p class="parrafo">Desde que era niño he sido un gran fanático de la tecnología y los videojuegos, quería saber
-            cómo
-            funcionaba
-            todo debajo del "capó", tenía mucha curiosidad. Cuando entré a la universidad descubrí la
-            programación
-            pero
-            no tenía idea de cuántas cosas se podían crear a partir de ella, así que un día busqué en Google
-            'Cómo
-            hacer
-            videojuegos' y nació la magia.
+    <section id="sobremi">
+        <div class="contenedor_foto">
+            <img src="images_blog/IMG-20230529-WA0002.jpg" alt="perfil">
+        </div>
+        <div class="sobremi">
+            <p class="titulo_seccion">
+                Sobre mi
+            </p>
+            <h2>Hola, soy <span>Jose A. Izaguirre P.</span></h2>
+            <h3>Desarrollador Web</h3>
+            <p>Desde un periodo de mi vida me junte con unos compañeros que en su hobie creaban paginas web, yo en mi
+                ignorancia sentia que ra aburrido y no les prestaba mucha atencion, pasando el tiempo decidi echarle un
+                vistazo a aquello que apasionaba tanto a mi compañeros de vida... a partir de ahi todo se resume hasta
+                hoy en dia...</p>
+            <p>Me gradue de la secundaria y lo que queria hacer con mi vida era diseñar graficos, ya sea paginas web,
+                imagenes, video juegos, entre otras cosas.Pensaba que por que no aprender como se hace lo que me gusta
+                consumir y hasta hoy en dia sigo aprendiendo mas y mas lo que este mundo "cibernetico" cada dia me trae;
+                me considero programador web no de los mejores pero si uno que sabe defender y respeta lo basico y
+                fundamental de todas esas reglas que existen en ese mundo, metodico, creyente de la filosofia
+                estoica...te ofrezco mis servicios.
+            </p>
+            <a href="#">Descargar curriculum</a>
+        </div>
+    </section>
 
-            Mi aventura como desarrollador comenzó creando videojuegos durante casi medio año, sin embargo a
-            medida
-            que
-            aprendía más y más me di cuenta de lo vasto que era el mundo del desarrollo y sin darme cuenta,
-            descubrir y
-            aprender cosas nuevas cada día se convirtió en mi nueva pasión.
+    <!--seccion servicios-->
 
-            Ahora soy Desarrollador Web, todavía estudiante y en mi tiempo libre creo videojuegos como hobby.
-            Sin
-            embargo, cada día sigo mejorando mis habilidades aún más y aprendiendo cosas nuevas que me hacen
-            crecer
-            día
-            a día como un mayor desarrollador.</p>
+    <section id="servicios">
+        <h3 class="titulo_seccion">MIS SERVICIOS</h3>
+        <div class="fila">
+            <div class="servicios">
+                <span class="icono"><i class="fa-solid fa-code"></i></span>
+                <h4>Diseño de Paginas Web</h4>
+                <hr>
+                <ul class="servicios_tag">
+                    <li>Web</li>
+                    <li>Graphic</li>
+                    <li>SEO</li>
+                </ul>
+                <p>Diseño de Paginas Web para tu empresa o negocio, apps, frontend, aPIS, backend...! Quedaras
+                    complacido, seras mi cliente favorito.</p>
+            </div>
+            <div class="servicios">
+                <span class="icono"><i class="fa-solid fa-code"></i></span>
+                <h4>Diseño de Paginas Web</h4>
+                <hr>
+                <ul class="servicios_tag">
+                    <li>Web</li>
+                    <li>Graphic</li>
+                    <li>SEO</li>
+                </ul>
+                <p>¿sabias que? Python es un lenguaje de programación utilizado en las aplicaciones
+                    web, el desarrollo de software,y el machine learning, además de que se puede
+                    ejecutar en muchas plataformas diferentes...
+                    Lo ofrecemos para ti! </p>
+            </div>
 
-        <img class="imagen"
-            src="https://www.adeccorientaempleo.com/wp-content/uploads/2022/02/programacion-web-full-stack-800x580.jpg"
-            alt="programador-standard">
+            <div class="servicios">
+                <span class="icono"><i class="fa-solid fa-code"></i></span>
+                <h4>Diseño de Paginas Web</h4>
+                <hr>
+                <ul class="servicios_tag">
+                    <li>Web</li>
+                    <li>Graphic</li>
+                    <li>SEO</li>
+                </ul>
+                <p>¿sabias que? React o ReactJS es una biblioteca Javascript de código abierto diseñada para crear
+                    interfaces de usuario con el objetivo de facilitar el desarrollo de aplicaciones en una sola página.
+                </p>
+            </div>
+            <div class="servicios">
+                <span class="icono"><i class="fa-solid fa-code"></i></span>
+                <h4>Diseño de Paginas Web</h4>
+                <hr>
+                <ul class="servicios_tag">
+                    <li>Web</li>
+                    <li>Graphic</li>
+                    <li>SEO</li>
+                </ul>
+                <p>¿sabias que? El lenguaje de consulta estructurada (SQL) es un lenguaje de programación para almacenar
+                    y procesar información en una base de datos relacional.</p>
+            </div>
+
+        </div>
+    </section>
+    </div>
+    </section>
+
+    <!--seccion habilidades-->
+
+    <div class="contenedor_skills" id="skills">
+        <h3>HABILIDADES</h3>
+        <div class="skils">
+            <div class="info">
+                <p><span class="lista"></span> Html & Css</p>
+                <span class="porcentaje">95%</span>
+            </div>
+            <div class="barra">
+                <div id="html" class="barra_progreso1"></div>
+            </div>
+        </div>
+        <div class="skils">
+            <div class="info">
+                <p><span class="lista"></span> JavaScript</p>
+                <span class="porcentaje">90%</span>
+            </div>
+            <div class="barra">
+                <div id="js" class="barra_progreso2"></div>
+            </div>
+        </div>
+        <div class="skils">
+            <div class="info">
+                <p><span class="lista"></span> base de Datos</p>
+                <span class="porcentaje">90%</span>
+            </div>
+            <div class="barra">
+                <div id="bd" class="barra_progreso3"></div>
+            </div>
+        </div>
+        <div class="skils">
+            <div class="info">
+                <p><span class="lista"></span> Photoshop</p>
+                <span class="porcentaje">85%</span>
+            </div>
+            <div class="barra">
+                <div id="ps" class="barra_progreso4"></div>
+            </div>
+        </div>
     </div>
 
-    <div class="content1">
-        <h1 class="heading1">Mas alla de mis herramientas</h1>
-        <p class="parrafo1">Mi nombre es Jose A. Izaguirre P., y mi pasión es transmitir mis conocimientos
-            especializados en
-            developer
-            web a todo aquel que esté interesado en necesitar m serviciode desarrollo web frontend, ya sea de manera
-            presencial u online. Mi enfoque pedagógico se basa en una perspectiva holística que no se limita a las
-            competencias técnicas, sino que también enfatiza la importancia de las habilidades personales o soft skills.
 
-            Con años de experiencia en este campo, estoy convencido de que el camino hacia un crecimiento sólido como
-            desarrollador/a web no radica en la acumulación de información, sino en la comprensión profunda y la
-            maestría de las herramientas adecuadas, junto con el desarrollo de habilidades personales que te permitan
-            progresar en tu carrera profesional.</p>
+    <!--seccion portafolio-->
 
-        <img class="imagen1"
-            src="https://previews.123rf.com/images/robuart/robuart1504/robuart150400139/38419648-concepto-con-vista-superior-del-programador-para-el-sitio-web-de-codificaci%C3%B3n-y-conjunto-de.jpg">
+    <section id="portfolio">
+        <h3 class="titulo_seccion_portfolio">MIS PROYECTOS</h3>
+        <div class="fila">
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <img src="images_blog/form_proyecto.png" alt="proyecto">
+                <div class="info">
+                    <h4>Formulario</h4>
+                    <p>Diseño Web</p>
+                </div>
+            </div>
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <img src="images_blog/form1.png" alt="proyecto">
+                <div class="info">
+                    <h4>Formulario</h4>
+                    <p>Diseño Web</p>
+                </div>
+            </div>
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <img src="images_blog/form.png" alt="proyecto">
+                <div class="info">
+                    <h4>Formulario</h4>
+                    <p>Diseño Web</p>
+                </div>
+            </div>
+        </div>
+        <div class="info_special">
+            <h3 class="entre_otros">entre otros mas...</h3>
+        </div>
+    </section>
 
+    <!--seccion footer-->
 
-    </div>
-    <div class="content2">
-        <h1 class="heading2">Servicios</h1>
-        <span><img class="imagen2" src="images/317755_badge_html_html5_achievement_award_icon.png" alt="html"></span>
-        <span><img class="imagen3" src="images/css.png" alt="css"></span>
-        <span><img class="imagen4" src="images/javascript.png" alt="js"></span>
-        <span><img class="imagen5" src="images/2290862_code_dashboard_development_html_text_icon.png"
-                alt="devolopment"></span>
-        <span><img class="imagen6" src="images/4518857_python_icon.png" alt="python"></span>
-        <span><img class="imagen7" src="images/react.png" alt="react"></span>
-    </div>
-
-    <div class="content3">
-        <h1 class="heading3">Algunos proyetos hechos...!</h1>
-        <span class="portfolio"><img class="form_yeiber" src="images/formyeiber.png" alt="form_yeiber"></span>
-        <span class="portfolio"><img class="navin" src="images/navin.png" alt="navin"></span>
-        <span class="portfolio"><img class="form" src="images/form.png" alt="form"></span>
-        <span class="portfolio"><img class="form1" src="images/form1.png" alt="form1"></span>
-    </div>
-
-    <div class="content4">
-        <h1 class="heading4">Contactame...!</h1>
-        <ul>
-            <li>
-                <img class="whatsapp" src="images/whatsapp.png" alt="whatsapp">
-                <p class="whatsappp">+584244307004</p>
-            </li>
-            <li>
-                <img class="mail" src="images/mail.png">
-                <p class="mailp">joseaizaguirrep@gmail.com</p>
-            </li>
-        </ul>
-
-    </div>
+    <footer>
+        <p>Todos los Derechos Reservados - 2023</p>
+        <div class="redes">
+            <a id="facebook" onclick="linkFacebook()" href="#"><i class="fa-brands fa-facebook"></i></a>
+            <a id="instagram" onclick="linkInstagram()" href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a id="whatsapp" onclick="numWhatsapp()" href="#"><i class="fa-brands fa-whatsapp"></i></a>
+        </div>
+    </footer>
 
 
-
-    <header class="nav">
-
-        <a href="#" class="logo">Logo</a>
-        <nav>
-            <a href="#home" style="--clr:#ff4d4d;" class="active">Home</a>
-            <a href="#about" style="--clr:#c56cf0;">About</a>
-            <a href="#services" style="--clr:#ffeaa7;">Services</a>
-            <a href="#portfolio" style="--clr:#17c0eb;">Portfolio</a>
-            <a href="#contact" style="--clr:#fd79a8;">contact</a>
-        </nav>
-    </header>
-
-    <section id="home" style="--clr:#ff4d4d;"></section>
-    <section id="about" style="--clr:#c56cf0;"></section>
-    <section id="services" style="--clr:#ffeaa7;"></section>
-    <section id="portfolio" style="--clr:#17c0eb;"></section>
-    <section id="contact" style="--clr:#fd79a8;"></section>
-
-
-
-
-
-
-
-
-    <script>
-        let sec = document.querySelectorAll('section');
-        let link = document.querySelectorAll('nav a');
-
-        window.onscroll = () => {
-            sec.forEach(section => {
-                let top = window.scrollY;
-                let offset = section.offsetTop - 60;
-                let height = section.offsetHeight;
-                let id = section.getAttribute('id');
-
-                if (top >= offset && top < offset + height) {
-                    link.forEach(link => {
-                        link.classList.remove('active');
-                        document.querySelector('nav a[href*=' + id + ']').classList.add('active');
-                    })
-                }
-            })
-        };
-    </script>
-
+    <script src="script.js"></script>
 </body>
 
 </html>
